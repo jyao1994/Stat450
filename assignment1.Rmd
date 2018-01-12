@@ -1,0 +1,34 @@
+---
+title: "Assignment1"
+author: "JIA YAO (11753143)"
+date: "2018/1/11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+1) My name is Jia Yao, and I come from China. It's my 4th year in UBC, and I will continue my study in graduate program in U.S. I am so looking forward to graduate from UBC, so I hope I can do well in this course. My favourite food is Sushi, and I don't like sports. 
+
+2) My favourite equation is Pythagorean theorem. It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.
+$a^2+b^2=c^2$
+where c represents the length of the hypotenuse and a and b the lengths of the triangle's other two sides.
+
+3) My favourite dataset is called Exam, which has score of students under different teaching method. It shows that under different teaching method, students will have different scores, so the teacher should choose best method for students.
+
+```{r }
+exam<-read.csv("exam.csv",header = TRUE)
+exam[1:5,]
+```
+
+## Plots
+
+
+```{r, echo=FALSE}
+plot(exam)
+```
+
+
